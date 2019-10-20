@@ -54,6 +54,7 @@ public class ExploreActivity extends AppCompatActivity {
                                     querySnapshot.getId(),
                                     querySnapshot.getString("name"),
                                     querySnapshot.getString("major"),
+//                                    querySnapshot.getString("class"),
                                     querySnapshot.getDocumentReference("courses"),
                                     querySnapshot.getBoolean("studyAbroad"),
                                     querySnapshot.getString("abroadCountries"),
@@ -107,7 +108,7 @@ public class ExploreActivity extends AppCompatActivity {
             Map<String, Object> dataMap = new HashMap<>();
 
             dataMap.put("name", "try name"+random.nextInt(50));
-            dataMap.put("status", "try status"+random.nextInt(50));
+            dataMap.put("majort", "try status"+random.nextInt(50));
             dataMap.put("studyAbroad", true);
             dataMap.put("abroadCountries", "Hungary");
 
@@ -119,6 +120,10 @@ public class ExploreActivity extends AppCompatActivity {
 
 
         }
+    }
+
+    public void loadCourses(User u) {
+
     }
 
     private void setUpFirebase(){

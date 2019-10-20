@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonRegister;
+    private Button buttonQuestion;
     private EditText editTextEmail;
     private EditText editTextPassword;
 
@@ -36,15 +37,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressDialog = new ProgressDialog(this);
 
         buttonRegister = (Button) findViewById(R.id.buttonRegister);
+        buttonQuestion = (Button) findViewById(R.id.buttonQuestion);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword  = (EditText) findViewById(R.id.editTextPassword);
 
         textViewSignin = (TextView) findViewById(R.id.textViewSignin);
 
         buttonRegister.setOnClickListener(this);
+        buttonQuestion.setOnClickListener(this);
         textViewSignin.setOnClickListener(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
 
 
     }
@@ -60,6 +64,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent i = new Intent(MainActivity.this,LogInActivity.class);
             startActivity(i);
         }
+
+        if(view== buttonQuestion){
+            openAsk();
+        }
+
+    }
+
+    public void openAsk () {
+        Intent i = new Intent(MainActivity.this,Ask.class);
+        startActivity(i);
     }
     private void registerUser(){
         final String email = editTextEmail.getText().toString().trim();
@@ -99,5 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         });
+
+
     }
 }

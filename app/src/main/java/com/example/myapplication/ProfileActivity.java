@@ -27,6 +27,25 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
         TextView nameField = findViewById(R.id.userProfile);
         nameField.setText(user.getName());
+
+        TextView majorField = findViewById(R.id.profileMajor);
+        majorField.setText(user.getMajor());
+
+//        TextView classField = findViewById(R.id.profileClass);
+//        classField.setText(user.getClass().toString());
+
+//        TextView clubField = findViewById(R.id.profileClubs);
+//        clubField.setText(user.getClubs().toString());
+
+        TextView studyField = findViewById(R.id.profileStudyAbroad);
+        if (user.getStudyAborad()) {
+            studyField.setText(user.getAbroadCountry());
+        } else {
+            studyField.setText("no");
+        }
+
+//        TextView coursesField = findViewById(R.id.profileCourses);
+//        coursesField.setText(user.getCourses());
     }
 
 
