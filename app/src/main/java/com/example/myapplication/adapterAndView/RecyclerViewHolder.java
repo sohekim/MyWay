@@ -9,14 +9,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.R;
 
 public class RecyclerViewHolder extends RecyclerView.ViewHolder {
-    public TextView mUserName, mUserMajor;
+    public TextView mUserName, mUserMajor, mUserClass;
     public Button mDeleteButton;
 
     public RecyclerViewHolder(View itemView){
          super(itemView);
          mUserName = itemView.findViewById(R.id.userName);
+         mUserClass = itemView.findViewById(R.id.userClass);
          mUserMajor = itemView.findViewById(R.id.userMajor);
-         mDeleteButton = itemView.findViewById(R.id.deleteButton);
+
 
     }
 

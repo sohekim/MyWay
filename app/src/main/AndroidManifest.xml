@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".Ask">
+       
+        <activity android:name=".FeedActivity">
+      
+        <activity android:name=".ExploreActivity">
+
         <activity android:name=".EditProfileActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,6 +30,13 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LogInActivity" />
         <activity android:name=".MainActivity">
+
+
+           
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
 
