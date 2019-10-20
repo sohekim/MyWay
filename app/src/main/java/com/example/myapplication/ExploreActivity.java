@@ -54,6 +54,7 @@ public class ExploreActivity extends AppCompatActivity {
                                     querySnapshot.getId(),
                                     querySnapshot.getString("name"),
                                     querySnapshot.getString("major"),
+//                                    querySnapshot.getString("class"),
                                     querySnapshot.getDocumentReference("courses"),
                                     querySnapshot.getBoolean("studyAbroad"),
                                     querySnapshot.getString("abroadCountries"),
@@ -105,6 +106,8 @@ public class ExploreActivity extends AppCompatActivity {
 
             Map<String, Object> dataMap = new HashMap<>();
 
+
+
             dataMap.put("name", random.nextInt()+"");
             dataMap.put("major", "Computer Science");
             dataMap.put("studyAbroad", true);
@@ -115,6 +118,10 @@ public class ExploreActivity extends AppCompatActivity {
             ref.collection("courses").document().set(classes);
             ref.collection("internships").document().set(internship);
             ref.collection("clubs").document().set(club);
+
+    }
+
+    public void loadCourses(User u) {
 
     }
 

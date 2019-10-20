@@ -17,6 +17,7 @@ public class User implements Serializable{
     private String abroadCountry;
     private DocumentReference internship;
     private DocumentReference clubs;
+    private String course;
 
     public User(
             String uid,
@@ -27,6 +28,7 @@ public class User implements Serializable{
             String abroadCountry,
             DocumentReference internship,
             DocumentReference clubs
+
     )
 
     {
