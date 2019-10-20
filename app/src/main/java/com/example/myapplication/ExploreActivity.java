@@ -30,6 +30,8 @@ public class ExploreActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
     ArrayList<User> profileArrayList;
     RecyclerViewAdapter adapter;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,9 +123,6 @@ public class ExploreActivity extends AppCompatActivity {
 
     }
 
-    public void loadCourses(User u) {
-
-    }
 
     private void setUpFirebase(){
         db = FirebaseFirestore.getInstance();

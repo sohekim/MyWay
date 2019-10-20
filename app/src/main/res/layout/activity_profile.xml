@@ -16,23 +16,12 @@
         android:layout_marginTop="20dp" >
 
 
-        <ImageView
-
-            android:id="@+id/UserPhoto"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center_horizontal"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_launcher_background" />
-
         <TextView
             android:id="@+id/userProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="sans-serif-black"
             android:text="Name"
             android:textColor="@color/colorPrimary"
