@@ -11,30 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".Ask">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            </intent-filter>
-        </activity>
+       
         <activity android:name=".FeedActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            </intent-filter>
-        </activity>
+      
         <activity android:name=".ExploreActivity">
+
+        <activity android:name=".EditProfileActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ExploreActivity"></activity>
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LogInActivity" />
         <activity android:name=".MainActivity">
+
+
+           
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
