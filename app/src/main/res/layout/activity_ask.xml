@@ -49,7 +49,7 @@
             android:textSize="17dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSubmit"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
